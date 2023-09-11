@@ -94,13 +94,57 @@ body {
 	transform: skew(-21deg);
 }
 
-@media (max-width: 420px) {
-	.header-container {
-		padding: 1rem 0;
-		width: 100%;
+@media screen and (max-width: 360px) {
+	html {
+		overflow-x: hidden;
+	}
+
+	body {
+		max-width: 340px;
+	}
+
+	.header-container nav ul {
+		gap: 1.5rem;
+	}
+
+	.header-container nav ul img {
+		width: 20px;
+		height: 20px;
 	}
 
 	.hero-container {
-		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+
+	.hero-content {
+		position: relative;
+	}
+
+	.image-content img {
+		position: absolute;
+		width: 350px;
+		height: auto;
+		top: 70px;
+		right: 0;
+	}
+
+	.text-content {
+		margin-top: 10rem;
+	}
+
+	.text-content h2 {
+		font-size: 1.125rem;
+	}
+
+	.text-content h1 {
+		font-size: 3.5rem;
+	}
+
+	.text-content p {
+		font-size: 0.875rem;
+	}
+
+	.cta-a-2 {
+		display: none;
 	}
 }
